@@ -29,6 +29,7 @@ module Danger
       @project.source_directory = options[:source_directory]
       @project.output_directory = options[:output_directory]
       @project.input_format = options[:input_format]
+      @project.configuration = options[:configuration]
       @project.binary_file = options[:binary_file]
       @project.binary_basename = options[:binary_basename]
       @project.decimals = options[:decimals]
