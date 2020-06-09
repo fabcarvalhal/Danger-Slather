@@ -144,6 +144,7 @@ module Danger
     # @return [Array<String>]
     def show_coverage
       unless @project.nil?
+        puts "Test Coverage: #{@project.decimal_f([total_coverage])}%\n"
         line = "## Code coverage\n"
         line << total_coverage_markdown
         line << modified_files_coverage_table
